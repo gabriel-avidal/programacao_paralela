@@ -1,5 +1,6 @@
-// MPI_Exercicio 4
+// Programação Paralela em C usando MPI
 // Produto escalar.
+// Este programa realiza o cálculo do produto escalar usando multiprocessamento.
 #include <mpi.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -8,7 +9,7 @@
 int main(int argc, char** argv) {
     srand(time(NULL));
     int tag = 0;
-    int n = 4;
+    int n = atoi(argv[1]);
     double *x;
     double *y;
     // Inicializacao MPI
